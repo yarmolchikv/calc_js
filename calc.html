@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <title>Calc</title>
+        <script src="calc.js"></script>
+        <link rel="stylesheet" href="calc.css">
+    </head>
+	<body>
+        <f1 class="form">
+            <form id="result">
+                <input class="input" id="result_txt" type="text" value="0" onclick="PosEnd(result_txt)" onkeydown="return useKey(event)">
+            </form>
+            <table id="table">
+                <tr>
+                    <td>
+                        <button type="button" class="myButton" id="clear" onclick="fclear()">AC</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" onclick="fpm()">+/-</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" onclick="percent()">%</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" id="divide" onclick="addmathSymbol(document.getElementById('divide').innerHTML)">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="myButton" id="seven" onclick="addNumber(document.getElementById('seven').innerHTML)">7</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" id="eight" onclick="addNumber(document.getElementById('eight').innerHTML)">8</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" id="nine" onclick="addNumber(document.getElementById('nine').innerHTML)">9</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" id="asterics" onclick="addmathSymbol(document.getElementById('asterics').innerHTML)">*</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="myButton" id="four" onclick="addNumber(document.getElementById('four').innerHTML)">4</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" id="five" onclick="addNumber(document.getElementById('five').innerHTML)">5</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" id="six" onclick="addNumber(document.getElementById('six').innerHTML)">6</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" id="minus" onclick="addmathSymbol(document.getElementById('minus').innerHTML)">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="myButton" id = "one" onclick="addNumber(document.getElementById('one').innerHTML)">1</button>
+                    </td>
+                    <td>
+                        <button  type="button" class="myButton" id = "two"  onclick="addNumber(document.getElementById('two').innerHTML)">2</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" id="three" onclick="addNumber(document.getElementById('three').innerHTML)">3</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" id="plus" onclick="addmathSymbol(document.getElementById('plus').innerHTML)">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="myButton" id="zero" onclick="addNumber(document.getElementById('zero').innerHTML)">0</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" id="back" onclick="back()">C</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" id="comma" onclick="addComma(document.getElementById('comma').innerHTML)">.</button>
+                    </td>
+                    <td>
+                        <button type="button" class="myButton" id="equal" onclick="equal()">=</button>
+                    </td>
+                </tr>
+            </table>
+        </f1>
+       
+	</body>
+</html>

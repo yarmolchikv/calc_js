@@ -1,0 +1,26 @@
+.myButton {
+    background-color: burlywood;
+    width: 41px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.form {border: 2px solid black;
+    background-color: lightblue;
+    width: 180px;
+    height: 268px;
+    position: fixed;
+    top:20%;
+    right: 45%;
+    border-radius: 3%;
+}
+
+.input {border: 2px solid black;
+    width: 168px;
+    height: 40px;
+    margin: 2px;
+    text-align: right;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
